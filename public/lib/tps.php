@@ -240,8 +240,9 @@ class TPS{
             if($this->requirePDO){
                 $mysqli = $pdo;
             }
-            $this->databaseName = DATABASE;
-            $this->databaseHost = HOST;
+
+            $this->databaseName = 'tps';
+            $this->databaseHost = 'localhost';
             $this->mysqli = $mysqli?:$pdo;
             $this->db = $pdo;
         }

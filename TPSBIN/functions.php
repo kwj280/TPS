@@ -109,7 +109,7 @@
 
     function easy_crypt($ekey,$value){
         $encrypted=base64_encode(
-                mcrypt_encrypt(
+                mcrypt_encrypt( // old
                         MCRYPT_RIJNDAEL_256,
                         md5($ekey),
                         $value,
